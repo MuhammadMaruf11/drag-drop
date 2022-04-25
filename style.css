@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f1f1f1;
+}
+
+.appBody{
+    border: 3px dotted #d1d6d6;
+    background: #fff;
+    width: 700px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .3s;
+}
+
+.appBody.active{
+    border: 3px solid rgb(49, 168, 12);
+}
+
+.icon img{
+    max-width: 100%;
+}
+
+.appBody h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    margin: 10px 0 15px 0;
+}
+
+.appBody span{
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+    margin: 0px 0 15px 0;
+}
+
+.appBody button{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: rgba(13, 204, 45, 0.651);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.appBody img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media (max-width: 425px){
+    .appBody{
+        width: 320px;
+        height: 480px;
+    }
+}
