@@ -11,7 +11,7 @@ browseBtn.onclick = () => {
     inputBtn.click()
 }
 
-inputBtn.addEventListener('change', () => {
+inputBtn.addEventListener('change', function()  {
     myFile = this.files[0];
     dragArea.classList.add('active');
 
