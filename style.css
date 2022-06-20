@@ -33,6 +33,7 @@ body{
 
 .icon img{
     max-width: 160px;
+    max-height: 125px;
 }
 
 .appBody h3{
